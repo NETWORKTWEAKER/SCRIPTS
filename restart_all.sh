@@ -9,6 +9,9 @@ sudo systemctl restart fail2ban
 sudo systemctl restart cron
 sudo systemctl restart vnstat
 sudo systemctl restart xray
-sudo systemctl restart websocket
+
+# Restart WebSocket services
+sudo systemctl restart ws-nontls.service
+sudo systemctl restart ws-stunnel.service
 
 echo "All services have been restarted."
