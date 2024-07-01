@@ -19,7 +19,7 @@ Description=BadVPN UDP Gateway service
 After=network.target
 
 [Service]
-ExecStart=/usr/local/bin/badvpn-udpgw --listen-addr 0.0.0.0:7300 --max-clients 500
+ExecStart=/usr/local/bin/badvpn-udpgw --listen-addr 0.0.0.0:7300 --max-clients 500000
 Restart=always
 
 [Install]
